@@ -1,0 +1,42 @@
+{
+  "name": "the-faceless-fitatu-export-converter",
+  "version": "0.0.1",
+  "description": "Tools to convert data exported from fitatu to meet TheFaceless cooepration requirements.",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "init": "tsc --init",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" --fix",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "fitatu",
+    "converter",
+    "data",
+    "the faceless"
+  ],
+  "author": "Bartosz Rak",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.195",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "csv": "^6.3.1",
+    "dayjs": "^1.11.9",
+    "lodash": "^4.17.21"
+  }
+}
